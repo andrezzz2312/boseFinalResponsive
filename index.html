@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="#" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="preconnect" href="https://scripts.sirv.com" crossorigin />
+		<link rel="preconnect" href="https://listyara.sirv.com" crossorigin />
+		<link rel="dns-prefetch" href="https://scripts.sirv.com" />
+		<link rel="dns-prefetch" href="https://listyara.sirv.com" />
+
+		<title>BOSE</title>
+		<script>
+			window.jQuery ||
+				document.write('<script src="./js/jquery-3.7.1.min.js">\x3C/script>')
+		</script>
+		<script src="./js/jquery.reel.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="subVideo3" class="videoContainer"></div>
+			<div id="subVideo2" class="videoContainer"></div>
+			<div id="subVideo1" class="videoContainer"></div>
+			<div id="video3" class="videoContainer"></div>
+			<div id="video2" class="videoContainer"></div>
+			<div id="video1" class="videoContainer"></div>
+			<div id="loop" class="videoContainer">
+				<video
+					id="loopVideo"
+					src="./assets/loop.mp4"
+					playsinline
+					muted
+					autoplay
+					loop
+				></video>
+			</div>
+			<div id="subVideoBackLoop" class="videoContainer"></div>
+			<div id="subVideoTurn" class="videoContainer"></div>
+			<div id="mainButtons" class="show">
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<!-- <button id="fullscreen_button" class="buttonFull">
+							<i
+								id="expand"
+								class="fa-solid fa-up-right-and-down-left-from-center"
+							></i>
+							<i
+								id="contract"
+								class="fa-solid fa-down-left-and-up-right-to-center disabledb"
+							></i>
+						</button> -->
+					</div>
+				</div>
+
+				<div class="centerContainer">
+					<div class="buttonContainer">
+						<div class="threeButtonContainer">
+							<!-- <div class="titulo">CORPORATE OFFICE</div> -->
+
+							<div class="threeButtons">
+								<div class="buttonHolder">
+									<button id="VB1" data-id="vb1" class="button mainB">
+										TOUCH TO EXPLORE VB1
+									</button>
+									<button id="VB-S" data-id="vbs" class="button mainB">
+										TOUCH TO EXPLORE VB-S
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="showCont" class="showCont hidden short-vanish"></div>
+
+			<div class="warning">
+				<div class="modal">
+					<i class="fa-solid fa-circle-exclamation warnIcon"></i>
+					<span class="warningText"></span>
+				</div>
+			</div>
+			<div class="alertdiv">
+				<div class="modalalert">
+					<span id="close" class="x" value=""> &#x2715; </span>
+					<i class="fa-solid fa-circle-exclamation alertIcon"></i>
+					<span class="alertText">
+						Using this website on a Chrome web browser is recommended
+					</span>
+				</div>
+			</div>
+
+			<div class="loader">
+				<i class="fa-solid fa-spinner loadingIcon"></i>
+			</div>
+			<div class="initial"></div>
+		</div>
+		<script></script>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+	<script src="https://scripts.sirv.com/sirv.js"></script>
+
+	<script src="./js/main.js"></script>
+</html>
