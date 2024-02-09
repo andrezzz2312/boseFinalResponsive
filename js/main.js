@@ -988,8 +988,10 @@ function createContent(obj, parent) {
 
 		e.target.classList.add('subMiniButtonAct')
 		const subMiniVideoWidth = subMiniVideo.offsetWidth
+		const subMiniVideoHeight = subMiniVideo.offsetHeight
 
 		subMiniVideo.style.width = subMiniVideoWidth + 'px'
+		subMiniVideo.style.height = subMiniVideoHeight + 'px'
 
 		if (e.target === groupButton) {
 			subMiniVideo.src = 'assets/vbs/4kU/4kUSub1.mp4'
@@ -1469,14 +1471,14 @@ if (loop.readyState >= 1) {
 
 window.addEventListener('DOMContentLoaded', function () {
 	setFontSizes()
-	if (window.matchMedia('(max-width: 520px)').matches) {
-		if (window.matchMedia('(orientation: portrait)').matches) {
-			warningText.innerHTML =
-				' Use the device in landscape mode in order to properly use this website'
-			warning.style.opacity = '1'
-			warning.style.zIndex = '300'
-		}
-	}
+	// if (window.matchMedia('(max-width: 520px)').matches) {
+	// 	if (window.matchMedia('(orientation: portrait)').matches) {
+	// 		warningText.innerHTML =
+	// 			' Use the device in landscape mode in order to properly use this website'
+	// 		warning.style.opacity = '1'
+	// 		warning.style.zIndex = '300'
+	// 	}
+	// }
 })
 
 window.addEventListener('resize', function () {
@@ -1492,20 +1494,20 @@ window.addEventListener('resize', function () {
 			ArreglarLineas()
 		}
 	}
-	if (Math.abs(documentWidth - documentHeight) > 400) {
-		if (window.matchMedia('(orientation: portrait)').matches) {
-			warningText.innerHTML =
-				' Use the device in landscape mode in order to properly use this website'
-			warning.style.opacity = '1'
-			warning.style.zIndex = '300'
-		}
-	} else {
-		if (window.matchMedia('(orientation: landscape)').matches) {
-			warning.style.opacity = '0'
-			warning.style.zIndex = '-100'
-			window.scrollTo(0, document.body.scrollHeight)
-		}
-	}
+	// if (Math.abs(documentWidth - documentHeight) > 400) {
+	// 	if (window.matchMedia('(orientation: portrait)').matches) {
+	// 		warningText.innerHTML =
+	// 			' Use the device in landscape mode in order to properly use this website'
+	// 		warning.style.opacity = '1'
+	// 		warning.style.zIndex = '300'
+	// 	}
+	// } else {
+	// 	if (window.matchMedia('(orientation: landscape)').matches) {
+	// 		warning.style.opacity = '0'
+	// 		warning.style.zIndex = '-100'
+	// 		window.scrollTo(0, document.body.scrollHeight)
+	// 	}
+	// }
 })
 
 ////////// Event Listeners for the main buttons //////////
